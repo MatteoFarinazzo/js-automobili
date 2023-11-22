@@ -53,4 +53,43 @@ let cars = [
 
 ];
 
+    let car = printCarArray(cars);
 
+
+
+
+    cars.forEach(function(car) {
+        console.log(alimentazione);
+        
+    });
+
+
+
+
+
+    //-------FUNZIONI---
+
+
+    function printObject(object) {
+        let string = "";
+    
+        string += "{\n";
+    
+        for (let key in object) {
+            string += "\t " + key + ": " + object[key] + "\n";
+        }
+    
+        string += "}";
+    
+        console.log(string);
+    
+    }
+
+
+    function printCarArray(cars){
+        for (let i=0; i<cars.length; i++){
+
+            let car = cars[i];
+            printObject(car);
+        }
+    }
