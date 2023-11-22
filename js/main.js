@@ -56,12 +56,29 @@ let cars = [
     let car = printCarArray(cars);
 
 
+    let autoBenzina = [];
+    let autoDiesel = [];
+    let altreAuto = [];
+
+
 
 
     cars.forEach(function(car) {
-        console.log(alimentazione);
+
+       if (car.alimentazione == "Benzina"){
+        autoBenzina.push(car);
+       } else if(car.alimentazione == "Diesel") {
+        autoDiesel.push(car);
+       } else{
+        altreAuto.push(car);
+       }
         
     });
+
+    console.log(autoBenzina);
+    console.log(autoDiesel);
+    console.log(altreAuto);
+
 
 
 
@@ -92,4 +109,5 @@ let cars = [
             let car = cars[i];
             printObject(car);
         }
+        
     }
