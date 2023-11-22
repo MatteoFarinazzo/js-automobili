@@ -84,8 +84,8 @@ let cars = [
         let carSpec = `
             <div class="col-4">
                     <h5 class="">${car.modello}</h5>
-                    <p class="">Marca: ${car.marca}</p>
-                    <p class="">Tipo di alimentazione: ${car.alimentazione}</p>
+                    <p class="">Marca:    ${car.marca}</p>
+                    <p class="">Tipo di alimentazione:    ${car.alimentazione}</p>
             </div>
         `;
         document.getElementById("autoBenzina").innerHTML += carSpec;
@@ -96,8 +96,8 @@ let cars = [
         let carSpec = `
             <div class="col-4">
                     <h5 class="">${car.modello}</h5>
-                    <p class="">Marca: ${car.marca}</p>
-                    <p class="">Tipo di alimentazione: ${car.alimentazione}</p>
+                    <p class="">Marca:    ${car.marca}</p>
+                    <p class="">Tipo di alimentazione:    ${car.alimentazione}</p>
             </div>
         `;
         document.getElementById("autoDiesel").innerHTML += carSpec;
@@ -108,8 +108,8 @@ let cars = [
         let carSpec = `
             <div class="col-4">
                     <h5 class="">${car.modello}</h5>
-                    <p class="">Marca: ${car.marca}</p>
-                    <p class="">Tipo di alimentazione: ${car.alimentazione}</p>
+                    <p class="">Marca:    ${car.marca}</p>
+                    <p class="">Tipo di alimentazione:    ${car.alimentazione}</p>
             </div>
         `;
         document.getElementById("altreAuto").innerHTML += carSpec;
