@@ -150,3 +150,56 @@ let cars = [
         }
         
     }
+
+
+
+    function addCar(event) {
+        event.preventDefault();
+    
+        let newCarModel = document.getElementById("nameInput").value;
+        let newCarMarca = document.getElementById("marcaInput").value;
+        let newCarTipo = document.getElementById("tipoInput").value;
+    
+        let newCar = {
+            marca: newCarModel,
+            modello: newCarMarca,
+            alimentazione: newCarTipo,
+        };
+    
+        cars.push(newCar);
+        console.log(newCar);
+
+
+        if (newCarTipo == "Benzina"){
+            let carSpec = `
+            <div class="col-4">
+                    <h5 class="">${newCarModel}</h5>
+                    <p class="">Marca:    ${newCarMarca}</p>
+                    <p class="">Tipo di alimentazione:    ${newCarTipo}</p>
+            </div>
+        `;
+        document.getElementById("autoBenzina").innerHTML += carSpec;
+
+           } else if(newCarTipo == "Diesel") {
+                    let carSpec = `
+            <div class="col-4">
+                    <h5 class="">${newCarModel}</h5>
+                    <p class="">Marca:    ${newCarMarca}</p>
+                    <p class="">Tipo di alimentazione:    ${newCarTipo}</p>
+            </div>
+        `;
+        document.getElementById("autoDiesel").innerHTML += carSpec;
+
+           } else{
+                    let carSpec = `
+            <div class="col-4">
+                    <h5 class="">${newCarModel}</h5>
+                    <p class="">Marca:    ${newCarMarca}</p>
+                    <p class="">Tipo di alimentazione:    ${newCarTipo}</p>
+            </div>
+        `;
+        document.getElementById("altreAuto").innerHTML += carSpec;
+           }
+
+    
+    }
